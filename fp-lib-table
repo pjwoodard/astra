@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "astra_parts_library")(type "KiCad")(uri "${KIPRJMOD}/astra_parts_library/astra_parts_library.pretty")(options "")(descr ""))
+)

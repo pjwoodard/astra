@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "FTSH-107-01-F-DV-K-P-TR")(type "KiCad")(uri "${KIPRJMOD}/astra_parts_library/FTSH_107_01_F_DV_K_P_TR/FTSH-107-01-F-DV-K-P-TR.kicad_sym")(options "")(descr ""))
+)
