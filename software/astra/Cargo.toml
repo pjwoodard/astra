@@ -1,0 +1,42 @@
+[package]
+edition = "2024"
+name = "astra"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+
+publish = false
+
+[dependencies]
+embassy-rp = { git = "https://github.com/embassy-rs/embassy", optional = true, features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl", "rp235xa", "binary-info"] }
+embassy-stm32 = { git = "https://github.com/embassy-rs/embassy", optional = true, features = ["defmt", "stm32h753zi", "time-driver-any", "memory-x", "exti"] }
+embassy-executor = { git = "https://github.com/embassy-rs/embassy", features = ["arch-cortex-m", "executor-thread", "executor-interrupt", "defmt"] }
+embassy-time = { git = "https://github.com/embassy-rs/embassy", features = ["defmt", "defmt-timestamp-uptime"] }
+embassy-sync = { git = "https://github.com/embassy-rs/embassy", features = ["defmt"] }
+embassy-embedded-hal = { git = "https://github.com/embassy-rs/embassy", features = ["defmt"] }
+
+defmt = "1.0.1"
+defmt-rtt = "1.0.0"
+fixed = "1.23.1"
+fixed-macro = "1.2"
+cortex-m = { version = "0.7", features = ["inline-asm"] }
+cortex-m-rt = "0.7.0"
+panic-probe = { version = "1.0.0", features = ["print-defmt"] }
+embedded-hal-1 = { package = "embedded-hal", version = "1.0" }
+embedded-hal-async = "1.0"
+embedded-hal-bus = { version = "0.1", features = ["async"] }
+embedded-io-async = { version = "0.7.0", features = ["defmt"] }
+embedded-storage = { version = "0.3" }
+
+[features]
+default = ["stm32h7"]
+rp2350 = ["embassy-rp"]
+stm32h7 = ["embassy-stm32", "cortex-m/critical-section-single-core"]
+
+[profile.release]
+# Enable generation of debug symbols even on release builds
+debug = true
+
+[package.metadata.embassy]
+build = [
+  { target = "thumbv8m.main-none-eabihf", artifact-dir = "out/examples/rp235x" }
+]

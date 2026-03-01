@@ -1,0 +1,10 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "software/astra/Cargo.toml"
+    ],
+    "rust-analyzer.cargo.features": ["rp2350"],
+    "rust-analyzer.cargo.target": "thumbv8m.main-none-eabihf",
+    "rust-analyzer.check.allTargets": false,
+    "rust-analyzer.check.command": "check",
+    "rust-analyzer.cargo.sysroot": "discover"
+}

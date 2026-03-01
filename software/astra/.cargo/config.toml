@@ -1,0 +1,11 @@
+[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+runner = "probe-rs run --chip STM32H753ZITx"
+# runner = "probe-rs run --chip RP235x"     # uncomment for RP2350
+# runner = "picotool load -u -v -x -t elf"  # alternative RP2350 runner
+
+[build]
+target = "thumbv7em-none-eabihf"
+# target = "thumbv8m.main-none-eabihf"  # uncomment for RP2350
+
+[env]
+DEFMT_LOG = "debug"
