@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FW400WFMR1
+D Crystals 40.000MHz 10pF 10ppm -20 to +85
+K
+F https://www.diodes.com/assets/Datasheets/FW.pdf
+$ENDCMP
+#
+#End Doc Library

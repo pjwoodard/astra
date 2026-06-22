@@ -1,0 +1,2778 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0672904f-5d99-4f31-b087-b1c2b74d131c")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Merops_Power:VDD_3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VDD_3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VDD_3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDD_3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "astra_parts:ESP32-C3 - Power"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0.762 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ESP32-C3"
+				(at 16.764 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
+				(at 31.242 -62.484 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf"
+				(at 44.45 -59.944 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RF Module, ESP32 SoC, RISC-V, WiFi 802.11b/n/g, Bluetooth LE 5, QFN32"
+				(at 37.338 -64.77 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "WiFi BLE ESP32 Espressif"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "QFN*1EP*5x5mm*P0.5mm*EP3.7x3.7mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32-C3 - Power_1_1"
+				(rectangle
+					(start 0 0)
+					(end 21.59 -45.72)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Power\n-----\n"
+					(at 10.16 -2.794 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -6.35 0)
+					(length 2.54)
+					(name "VDD3P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -2.54 -22.86 0)
+					(length 2.54)
+					(name "VDD_SPI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -38.1 0)
+					(length 2.54)
+					(name "VDD3P3_CPU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 10.16 -48.26 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 24.13 -6.35 180)
+					(length 2.54)
+					(name "VDD3P3_RTC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 24.13 -22.86 180)
+					(length 2.54)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:Earth"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 101.6 49.53)
+		(end 241.3 128.27)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 194 194 194 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 405e1828-e7b2-42c7-b1f6-7bcb1bdad361)
+	)
+	(text "Microcontroller Power Supply Scheme\n"
+		(exclude_from_sim no)
+		(at 173.736 124.714 0)
+		(effects
+			(font
+				(face "Liberation Serif")
+				(size 1.905 1.905)
+				(thickness 0.508)
+				(bold yes)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "3c4b95fe-1cbb-41e8-9ffe-862a9c6e9295")
+	)
+	(text_box "DESIGN NOTE:\nThe inductor's rated current is preferably 500 mA and above."
+		(exclude_from_sim no)
+		(at 116.205 81.28 0)
+		(size 26.67 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 194 194 194 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "59f4b88e-221d-489a-85c3-4f9874fd4b18")
+	)
+	(junction
+		(at 107.95 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fe0f261-2adc-4c3c-9f61-42ae51941fd7")
+	)
+	(junction
+		(at 148.59 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15f4c21b-b6d8-4d13-bc7c-0b1dfa69ee82")
+	)
+	(junction
+		(at 204.47 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a430514-bf81-4ca5-a086-5f99ec262b9e")
+	)
+	(junction
+		(at 156.21 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2287b306-bbbc-438d-8458-26deefdbeb15")
+	)
+	(junction
+		(at 128.27 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2e38b1b-65e9-4ad3-b645-f4152e376a6c")
+	)
+	(junction
+		(at 128.27 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acafbd4f-cecf-4c8c-945a-d72e0b604b10")
+	)
+	(junction
+		(at 107.95 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b580f19f-e18e-40cf-a9a4-4dc43e0e0dbb")
+	)
+	(junction
+		(at 204.47 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d28d5fab-bdde-4355-87c8-b383b1933da4")
+	)
+	(junction
+		(at 148.59 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8ba61b6-1c9a-4ca9-962d-3ddf475fb85a")
+	)
+	(junction
+		(at 222.25 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8bc4f9e-dd33-4903-ac91-dc0d0f4836c2")
+	)
+	(junction
+		(at 222.25 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f306cff2-a6d6-4347-a472-a3b5de83e8f9")
+	)
+	(wire
+		(pts
+			(xy 176.53 109.22) (xy 176.53 111.76)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "014ab95b-361e-4a03-9ebe-60f56743b589")
+	)
+	(wire
+		(pts
+			(xy 128.27 67.31) (xy 128.27 68.58)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "02c559b4-a43c-44d7-97a0-d8474e20f5f1")
+	)
+	(wire
+		(pts
+			(xy 148.59 67.31) (xy 148.59 68.58)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "0d2a6760-3f2e-48a6-8bde-f759398d3462")
+	)
+	(wire
+		(pts
+			(xy 107.95 77.47) (xy 128.27 77.47)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "117a31cd-4a9b-46ff-868e-e615910f6c2a")
+	)
+	(wire
+		(pts
+			(xy 222.25 93.98) (xy 222.25 95.25)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "183b6be8-e690-4842-83f2-7bc5aa4de195")
+	)
+	(wire
+		(pts
+			(xy 107.95 77.47) (xy 107.95 78.74)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "19449137-79a0-4e76-bbb4-a8b395e8cad8")
+	)
+	(wire
+		(pts
+			(xy 128.27 76.2) (xy 128.27 77.47)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "213b74d7-cd11-4d9e-bf19-899e574a1c6f")
+	)
+	(wire
+		(pts
+			(xy 148.59 109.22) (xy 148.59 110.49)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "23f6f28a-7d17-48a1-86b4-be77812086a0")
+	)
+	(wire
+		(pts
+			(xy 107.95 76.2) (xy 107.95 77.47)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "2cdd9db8-d870-42a6-bdff-8f41182a65fa")
+	)
+	(wire
+		(pts
+			(xy 222.25 92.71) (xy 222.25 93.98)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "3443af32-dc42-4566-a0eb-2106c7b832f8")
+	)
+	(wire
+		(pts
+			(xy 142.24 67.31) (xy 148.59 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "39ccee1c-95fd-43c2-9216-bbbbd6f7e287")
+	)
+	(wire
+		(pts
+			(xy 148.59 99.06) (xy 148.59 101.6)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "533d8423-2c9b-4d2a-a53c-10d6767f27b9")
+	)
+	(wire
+		(pts
+			(xy 148.59 77.47) (xy 148.59 76.2)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "62aed071-5bf8-4595-b1f6-1d88b5cc894b")
+	)
+	(wire
+		(pts
+			(xy 190.5 67.31) (xy 204.47 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "656d2ddb-3ffb-4609-939c-c32946be001a")
+	)
+	(wire
+		(pts
+			(xy 204.47 66.04) (xy 204.47 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "66229c34-69b0-4ac9-a331-c6eeb2bb25bb")
+	)
+	(wire
+		(pts
+			(xy 156.21 83.82) (xy 163.83 83.82)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "6b611e8f-13f5-488f-8a37-d4e9db12d5cc")
+	)
+	(wire
+		(pts
+			(xy 204.47 76.2) (xy 204.47 77.47)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "6d23732e-1f97-4119-80e7-a3b1d3faac91")
+	)
+	(wire
+		(pts
+			(xy 128.27 77.47) (xy 148.59 77.47)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "7a965001-f523-4247-8cca-c66a428ff62c")
+	)
+	(wire
+		(pts
+			(xy 222.25 82.55) (xy 222.25 83.82)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "80be01f3-23df-4092-b07c-9caf0edba987")
+	)
+	(wire
+		(pts
+			(xy 156.21 82.55) (xy 156.21 83.82)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "91b3ad11-9629-4576-823d-9581152dfad5")
+	)
+	(wire
+		(pts
+			(xy 190.5 83.82) (xy 204.47 83.82)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "9d938487-44be-481b-a387-62683bec890a")
+	)
+	(wire
+		(pts
+			(xy 148.59 67.31) (xy 163.83 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "a2d1ce5c-bd57-481f-83a8-f284b251d726")
+	)
+	(wire
+		(pts
+			(xy 128.27 67.31) (xy 134.62 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "a93082e8-58be-4fec-8dbc-79ea9ec1c248")
+	)
+	(wire
+		(pts
+			(xy 222.25 93.98) (xy 204.47 93.98)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "af579306-486b-457a-b3f5-9a86ef0cf798")
+	)
+	(wire
+		(pts
+			(xy 148.59 97.79) (xy 148.59 99.06)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "b3c346b5-23a5-45ab-a8be-23bead28131e")
+	)
+	(wire
+		(pts
+			(xy 204.47 83.82) (xy 204.47 85.09)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "b42874a7-4da2-4b9c-841a-7538e3c9d003")
+	)
+	(wire
+		(pts
+			(xy 222.25 83.82) (xy 222.25 85.09)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "c5f1f95d-d296-46d8-b71c-84b6e6056747")
+	)
+	(wire
+		(pts
+			(xy 107.95 67.31) (xy 128.27 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "de0bf742-e323-4ac0-bff7-50574505318d")
+	)
+	(wire
+		(pts
+			(xy 204.47 67.31) (xy 204.47 68.58)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "e0ad18ef-be08-4fa9-89cb-9a280e0154b9")
+	)
+	(wire
+		(pts
+			(xy 107.95 67.31) (xy 107.95 68.58)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "e803983a-a425-4bf4-8e84-14071cc66d77")
+	)
+	(wire
+		(pts
+			(xy 148.59 99.06) (xy 163.83 99.06)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "e9048153-1761-4a8a-8c65-b4f066de625b")
+	)
+	(wire
+		(pts
+			(xy 156.21 93.98) (xy 156.21 95.25)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "ef6f6da5-a7bc-4fda-9969-07e1656f1b5c")
+	)
+	(wire
+		(pts
+			(xy 107.95 67.31) (xy 107.95 66.04)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "f03c1194-2c9c-4024-a79b-8bdda05e42f4")
+	)
+	(wire
+		(pts
+			(xy 156.21 83.82) (xy 156.21 86.36)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "f44d2a71-6652-4363-ae73-2f393ec09627")
+	)
+	(wire
+		(pts
+			(xy 204.47 93.98) (xy 204.47 92.71)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "f77ca2a8-b28a-4448-8a8f-6c3e6851d616")
+	)
+	(wire
+		(pts
+			(xy 204.47 83.82) (xy 222.25 83.82)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "fd8431c5-f6fb-4757-bd60-3fed9e6db400")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 204.47 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1136d18e-d371-4b06-9055-8f97a3e75478")
+		(property "Reference" "C13"
+			(at 207.01 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u X7R ??V"
+			(at 207.01 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 205.4352 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8e21f83-d63f-460e-be0d-bf2b3470ecb7")
+		)
+		(pin "1"
+			(uuid "b2680346-0f39-4913-a0ca-ab9d6f4dd71d")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 204.47 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b7c26e1-1b95-40b4-a7a1-1554fc794976")
+		(property "Reference" "#PWR020"
+			(at 204.47 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 204.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 204.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b0fad00-61fd-4f10-872b-7968dcc42b02")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 128.27 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1eb13eb6-a251-4023-8153-f1f593276595")
+		(property "Reference" "C7"
+			(at 131.318 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u X7R ??V"
+			(at 131.318 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 129.2352 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 128.27 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "40bdd9d8-6ee1-44fe-8a6b-e302594f3dcf")
+		)
+		(pin "1"
+			(uuid "162b3d93-4829-4c39-868e-6657f884a35a")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Merops_Power:VDD_3V3")
+		(at 204.47 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "32bd6d78-b6ff-4140-8764-35d9fec4e8a9")
+		(property "Reference" "#PWR019"
+			(at 204.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 201.676 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label"
+			(at 204.47 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dccf8d86-331d-459d-a1d0-f5158beae1e4")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 204.47 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4624cadb-af61-4669-a328-fb2db8f856e5")
+		(property "Reference" "C12"
+			(at 207.518 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u X7R ??V"
+			(at 207.518 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 205.4352 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 204.47 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eef3e931-b143-4043-aac9-587c36f80f0e")
+		)
+		(pin "1"
+			(uuid "06abd22d-997d-41ed-a1a6-1f2546ebea4d")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "astra_parts:ESP32-C3 - Power")
+		(at 166.37 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cbdb9a2-2ee3-494a-b5ce-09fe3f29fcf9")
+		(property "Reference" "U2"
+			(at 166.37 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESP32-C3"
+			(at 178.054 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
+			(at 197.612 123.444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf"
+			(at 210.82 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Module, ESP32 SoC, RISC-V, WiFi 802.11b/n/g, Bluetooth LE 5, QFN32"
+			(at 203.708 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65848b1c-6c47-4088-aed1-34be84a5af64")
+		)
+		(pin "11"
+			(uuid "9ffe4005-c9a5-415d-89c6-657acafe6cf7")
+		)
+		(pin "17"
+			(uuid "967c12fa-22d5-4e4b-9ae1-07e2bea22eb6")
+		)
+		(pin "18"
+			(uuid "775a62d1-d615-4eca-9888-535ecf7a0990")
+		)
+		(pin "31"
+			(uuid "d9fb4dd2-8009-430e-997e-5becc48207c6")
+		)
+		(pin "33"
+			(uuid "942db378-5f61-45c3-a0bb-b4bf7f42656a")
+		)
+		(instances
+			(project ""
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 107.95 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a6d7c86-5513-4457-82e7-7fc3380a598e")
+		(property "Reference" "#PWR013"
+			(at 107.95 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 107.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 107.95 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02003b86-b635-4623-b2a4-5919a6ab272a")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 176.53 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f130947-9238-445a-8da5-55e0380d0f24")
+		(property "Reference" "#PWR04"
+			(at 176.53 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 176.53 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 176.53 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "408c2ed1-f6c6-480d-92f0-c9dd21a8a686")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "846fe1ea-bec0-43ba-b3e6-6af053086249")
+		(property "Reference" "C5"
+			(at 151.638 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u X7R ??V"
+			(at 151.638 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 149.5552 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ceddf79b-b6ad-499b-97b3-143a5c4f50e9")
+		)
+		(pin "1"
+			(uuid "02148d23-8238-487c-8b88-4755b4151a00")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 107.95 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c864a87-6e77-4495-9939-2009a0bdd070")
+		(property "Reference" "C8"
+			(at 110.998 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u X7R ??V"
+			(at 110.998 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 108.9152 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 107.95 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a8ab1283-cdb3-40fd-abb4-810a1da95937")
+		)
+		(pin "1"
+			(uuid "5feb63e5-7456-4b8e-b615-24c99ed21764")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 148.59 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91810b4b-6b98-44d7-a559-5fe351fa3c2e")
+		(property "Reference" "#PWR014"
+			(at 148.59 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 148.59 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 148.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dce3dc89-3fa2-491e-b0ad-55bb0669865d")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "937ae402-f536-4e8a-bab6-1c16f8c74cee")
+		(property "Reference" "C10"
+			(at 151.638 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u X7R ??V"
+			(at 151.638 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 149.5552 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6a6fc7f2-aaf2-45c6-becd-4836aef469c8")
+		)
+		(pin "1"
+			(uuid "da6cf522-941d-466c-a1d5-c0bd310b0722")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 138.43 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97570933-b5a0-4921-87c5-c86475d77e52")
+		(property "Reference" "L2"
+			(at 138.43 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+			)
+		)
+		(property "Value" "2.0nH"
+			(at 138.43 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 138.43 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d40acc66-c1c6-4c86-8dbf-0ace36d2d52d")
+		)
+		(pin "1"
+			(uuid "9643b890-b792-4628-be3e-6f193c22ddcf")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 156.21 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a103a8ee-6d07-455f-86ab-c39886512e9c")
+		(property "Reference" "C6"
+			(at 158.75 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u X7R ??V"
+			(at 158.75 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 157.1752 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 156.21 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aedb918b-37df-4f14-971a-44fe3275fc4c")
+		)
+		(pin "1"
+			(uuid "d20ebe22-2348-49a9-ab05-e9ea9590ccc7")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 222.25 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6dd733d-af5a-4160-8084-8bf93bf7d1c8")
+		(property "Reference" "C3"
+			(at 224.79 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n X7R ??V"
+			(at 224.79 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 223.2152 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2e84388e-e750-42fe-ba98-f6291a38ac63")
+		)
+		(pin "1"
+			(uuid "6ce67d88-3282-4c75-874c-652c85ed4f49")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Merops_Power:VDD_3V3")
+		(at 107.95 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa1f4e4a-66d8-41af-8788-0697a76e30e1")
+		(property "Reference" "#PWR017"
+			(at 107.95 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 105.156 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label"
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfc1df7f-dac1-49fd-b761-dfa20d9fbd4e")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Merops_Power:VDD_3V3")
+		(at 222.25 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf39cdf7-ad61-4700-b1e1-afa9137abb3a")
+		(property "Reference" "#PWR021"
+			(at 222.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 219.456 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label"
+			(at 222.25 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f730418-273f-4fcb-8471-51973e571f5f")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Merops_Power:VDD_3V3")
+		(at 156.21 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd573711-f1ee-4deb-a14f-5627925943fd")
+		(property "Reference" "#PWR015"
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 153.416 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label"
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49d264b2-7cdf-4e16-97c3-a0fc7678f79d")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Merops_Power:VDD_3V3")
+		(at 148.59 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0268332-03ab-4be2-bcc0-1d79408e1ff0")
+		(property "Reference" "#PWR018"
+			(at 148.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 145.796 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label"
+			(at 148.59 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26b3525f-85f2-4605-a137-cd8360644d77")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 156.21 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e74f76aa-9daf-4127-83b7-a0b8dea7d476")
+		(property "Reference" "#PWR016"
+			(at 156.21 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 156.21 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 156.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70249462-f2ee-47f6-919b-0c0cd603d58c")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 222.25 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc6fd1ce-ec32-4540-ba5a-dc77ae9ff06f")
+		(property "Reference" "#PWR022"
+			(at 222.25 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 222.25 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.1588)
+					(color 0 0 255 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 222.25 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03cd3bf3-325f-41c4-aa66-ce59507b1948")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
