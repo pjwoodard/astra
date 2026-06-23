@@ -1,1 +1,5 @@
 software/astra/target
+hardware/astra_flight/astra-backups/
+hardware/astra_radio/astra_radio-backups/
+hardware/astra_parts.bak
+hardware/astra_radio/*.lck

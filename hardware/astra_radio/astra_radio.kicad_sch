@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "8884176c-0d80-4e55-a09d-e5f02dc9ed2c")
 	(paper "A4")
 	(lib_symbols)
@@ -30,11 +30,13 @@
 			(color 0 0 194 1)
 		)
 		(fill
-			(color 0 194 194 1.0000)
+			(color 0 194 194 1)
 		)
 		(uuid "04a2e32a-f42d-4edd-a6fe-706cfcf8167c")
 		(property "Sheetname" "MCU - Power"
 			(at 96.52 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,6 +46,8 @@
 		)
 		(property "Sheetfile" "mcu_power.kicad_sch"
 			(at 96.52 45.0346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,11 +77,13 @@
 			(color 0 0 194 1)
 		)
 		(fill
-			(color 0 194 194 1.0000)
+			(color 0 194 194 1)
 		)
 		(uuid "04fadc63-cd15-40ae-8070-17413832c9e3")
 		(property "Sheetname" "MCU - IO"
 			(at 96.52 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87,6 +93,8 @@
 		)
 		(property "Sheetfile" "mcu_io.kicad_sch"
 			(at 96.52 92.6596 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -127,11 +135,13 @@
 			(color 0 0 194 1)
 		)
 		(fill
-			(color 221 133 0 1.0000)
+			(color 221 133 0 1)
 		)
 		(uuid "76460439-2e47-430e-9072-9daa859bcba0")
 		(property "Sheetname" "Power - Generation"
 			(at 58.42 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -141,6 +151,8 @@
 		)
 		(property "Sheetfile" "power_generation.kicad_sch"
 			(at 58.42 45.0346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -170,11 +182,13 @@
 			(color 0 0 194 1)
 		)
 		(fill
-			(color 221 164 203 1.0000)
+			(color 221 164 203 1)
 		)
 		(uuid "87710915-18f1-466a-bb9d-99b56279d8fb")
 		(property "Sheetname" "Connectors"
 			(at 18.415 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -184,6 +198,8 @@
 		)
 		(property "Sheetfile" "connectors.kicad_sch"
 			(at 18.415 45.0346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
