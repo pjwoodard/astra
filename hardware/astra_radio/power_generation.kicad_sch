@@ -937,7 +937,7 @@
 		(at 162.56 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9f0bcbc1-03ac-46d5-8fbb-0f0a6d0c0d0f")
+		(uuid "cb60ed47-34a8-48ba-a3b1-ef999b91647e")
 	)
 	(junction
 		(at 144.78 102.87)
@@ -973,6 +973,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 97.79) (xy 162.56 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "588296f9-4818-4719-8d22-eb51360f286a")
+	)
+	(wire
+		(pts
 			(xy 162.56 86.36) (xy 162.56 90.17)
 		)
 		(stroke
@@ -993,7 +1003,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 101.6) (xy 175.26 101.6)
+			(xy 162.56 101.6) (xy 173.99 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1073,16 +1083,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 97.79) (xy 162.56 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0e5eae0-4229-46c3-b373-2fc9dee9fcf8")
-	)
-	(wire
-		(pts
 			(xy 171.45 83.82) (xy 171.45 86.36)
 		)
 		(stroke
@@ -1112,14 +1112,15 @@
 		(uuid "f56a534c-bdbf-4e4d-9f67-0e688e1256dc")
 	)
 	(label "3V3_PG"
-		(at 175.26 101.6 180)
+		(at 173.99 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 132 0 0 1)
 			)
 			(justify right bottom)
 		)
-		(uuid "538cc2a2-f1a5-40d0-ac6f-867be3905413")
+		(uuid "b333fad8-efc9-4814-998c-ad400b0ca6f4")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1133,7 +1134,7 @@
 		(dnp no)
 		(uuid "09180c36-b20b-4616-bd2f-fe6aeb4a30fa")
 		(property "Reference" "C4"
-			(at 123.825 87.63 0)
+			(at 124.206 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1143,10 +1144,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 123.825 92.71 0)
+		(property "Value" "1u"
+			(at 120.65 92.964 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1693,7 +1694,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1u"
 			(at 172.085 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1938,10 +1939,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fa8e18a9-5ece-4d66-81b7-c8a5142ad602")
 		(property "Reference" "R8"
-			(at 165.1 92.7099 0)
+			(at 164.338 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1951,8 +1951,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 165.1 95.2499 0)
+		(property "Value" "100K"
+			(at 164.592 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
