@@ -338,172 +338,35 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Merops_Power:VDD_3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+		(symbol "astra_parts:ESP32-C3_-_Power"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VDD_3V3"
-				(at 0 3.556 0)
+			(property "Reference" "U2"
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VDD_3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "astra_parts:ESP32-C3 - Power"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0.762 1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+					(justify left)
 				)
 			)
 			(property "Value" "ESP32-C3"
-				(at 16.764 1.27 0)
+				(at 11.684 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
+			(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm_ThermalVias"
 				(at 31.242 -62.484 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -558,7 +421,7 @@
 					)
 				)
 			)
-			(symbol "ESP32-C3 - Power_1_1"
+			(symbol "ESP32-C3_-_Power_1_1"
 				(rectangle
 					(start 0 0)
 					(end 21.59 -45.72)
@@ -632,7 +495,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at -2.54 -22.86 0)
 					(length 2.54)
 					(name "VDD_SPI"
@@ -679,6 +542,145 @@
 						)
 					)
 					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -840,6 +842,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 101.6 49.53)
@@ -897,12 +1014,6 @@
 		(uuid "0fe0f261-2adc-4c3c-9f61-42ae51941fd7")
 	)
 	(junction
-		(at 148.59 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15f4c21b-b6d8-4d13-bc7c-0b1dfa69ee82")
-	)
-	(junction
 		(at 204.47 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -913,6 +1024,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2287b306-bbbc-438d-8458-26deefdbeb15")
+	)
+	(junction
+		(at 152.4 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59510192-8098-4674-85d0-dcbeae0c9457")
 	)
 	(junction
 		(at 128.27 67.31)
@@ -931,6 +1048,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b580f19f-e18e-40cf-a9a4-4dc43e0e0dbb")
+	)
+	(junction
+		(at 148.59 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b69caceb-076f-4219-ac4e-4b29290d6c0a")
 	)
 	(junction
 		(at 204.47 67.31)
@@ -997,6 +1120,17 @@
 			(type default)
 		)
 		(uuid "117a31cd-4a9b-46ff-868e-e615910f6c2a")
+	)
+	(wire
+		(pts
+			(xy 148.59 67.31) (xy 152.4 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "166995c6-f717-4a12-a892-ce0d27a3d226")
 	)
 	(wire
 		(pts
@@ -1068,6 +1202,17 @@
 			(color 221 133 0 1)
 		)
 		(uuid "39ccee1c-95fd-43c2-9216-bbbbd6f7e287")
+	)
+	(wire
+		(pts
+			(xy 152.4 67.31) (xy 163.83 67.31)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 221 133 0 1)
+		)
+		(uuid "3db01f72-d52b-4f5e-8485-a13576d83211")
 	)
 	(wire
 		(pts
@@ -1178,17 +1323,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 67.31) (xy 163.83 67.31)
-		)
-		(stroke
-			(width 0.508)
-			(type default)
-			(color 221 133 0 1)
-		)
-		(uuid "a2d1ce5c-bd57-481f-83a8-f284b251d726")
-	)
-	(wire
-		(pts
 			(xy 128.27 67.31) (xy 134.62 67.31)
 		)
 		(stroke
@@ -1246,9 +1380,8 @@
 			(xy 107.95 67.31) (xy 128.27 67.31)
 		)
 		(stroke
-			(width 0.508)
+			(width 0)
 			(type default)
-			(color 221 133 0 1)
 		)
 		(uuid "de0bf742-e323-4ac0-bff7-50574505318d")
 	)
@@ -1350,32 +1483,28 @@
 		(dnp no)
 		(uuid "1136d18e-d371-4b06-9055-8f97a3e75478")
 		(property "Reference" "C13"
-			(at 207.01 88.138 0)
+			(at 205.105 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "1u X7R ??V"
-			(at 207.01 90.424 0)
+		(property "Value" "C"
+			(at 205.105 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 205.4352 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -1435,7 +1564,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b7c26e1-1b95-40b4-a7a1-1554fc794976")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR20"
 			(at 204.47 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1443,21 +1572,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "Earth"
 			(at 204.47 82.55 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -1500,7 +1624,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR020")
+					(reference "#PWR20")
 					(unit 1)
 				)
 			)
@@ -1518,32 +1642,28 @@
 		(dnp no)
 		(uuid "1eb13eb6-a251-4023-8153-f1f593276595")
 		(property "Reference" "C7"
-			(at 131.318 71.628 0)
+			(at 128.905 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u X7R ??V"
-			(at 131.318 73.914 0)
+		(property "Value" "C"
+			(at 128.905 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 129.2352 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1592,7 +1712,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Merops_Power:VDD_3V3")
+		(lib_id "power:+3V3")
 		(at 204.47 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -1602,7 +1722,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32bd6d78-b6ff-4140-8764-35d9fec4e8a9")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR19"
 			(at 204.47 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -1610,22 +1730,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "+3V3"
-			(at 201.676 61.976 0)
+			(at 204.47 62.484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1650,7 +1765,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label"
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 204.47 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -1667,7 +1782,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR019")
+					(reference "#PWR19")
 					(unit 1)
 				)
 			)
@@ -1685,32 +1800,28 @@
 		(dnp no)
 		(uuid "4624cadb-af61-4669-a328-fb2db8f856e5")
 		(property "Reference" "C12"
-			(at 207.518 71.628 0)
+			(at 205.105 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u X7R ??V"
-			(at 207.518 73.914 0)
+		(property "Value" "C"
+			(at 205.105 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 205.4352 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1759,7 +1870,7 @@
 		)
 	)
 	(symbol
-		(lib_id "astra_parts:ESP32-C3 - Power")
+		(lib_id "astra_parts:ESP32-C3_-_Power")
 		(at 166.37 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -1791,7 +1902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm_ThermalVias"
 			(at 197.612 123.444 0)
 			(hide yes)
 			(show_name no)
@@ -1863,7 +1974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a6d7c86-5513-4457-82e7-7fc3380a598e")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR13"
 			(at 107.95 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1871,21 +1982,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "Earth"
 			(at 107.95 83.82 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -1928,7 +2034,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR013")
+					(reference "#PWR13")
 					(unit 1)
 				)
 			)
@@ -1946,7 +2052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f130947-9238-445a-8da5-55e0380d0f24")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR4"
 			(at 176.53 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -1954,21 +2060,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "Earth"
 			(at 176.53 116.84 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -2011,7 +2112,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR04")
+					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -2029,32 +2130,28 @@
 		(dnp no)
 		(uuid "846fe1ea-bec0-43ba-b3e6-6af053086249")
 		(property "Reference" "C5"
-			(at 151.638 71.628 0)
+			(at 149.225 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "1u X7R ??V"
-			(at 151.638 73.914 0)
+		(property "Value" "C"
+			(at 149.225 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 149.5552 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2114,32 +2211,28 @@
 		(dnp no)
 		(uuid "8c864a87-6e77-4495-9939-2009a0bdd070")
 		(property "Reference" "C8"
-			(at 110.998 71.628 0)
+			(at 108.585 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "10u X7R ??V"
-			(at 110.998 73.914 0)
+		(property "Value" "C"
+			(at 108.585 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 108.9152 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2199,7 +2292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91810b4b-6b98-44d7-a559-5fe351fa3c2e")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR14"
 			(at 148.59 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -2207,21 +2300,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "Earth"
 			(at 148.59 115.57 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -2264,7 +2352,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR014")
+					(reference "#PWR14")
 					(unit 1)
 				)
 			)
@@ -2282,32 +2370,28 @@
 		(dnp no)
 		(uuid "937ae402-f536-4e8a-bab6-1c16f8c74cee")
 		(property "Reference" "C10"
-			(at 151.638 104.648 0)
+			(at 149.225 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u X7R ??V"
-			(at 151.638 106.934 0)
+		(property "Value" "C"
+			(at 149.225 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 149.5552 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -2374,20 +2458,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
-		(property "Value" "2.0nH"
+		(property "Value" "L"
 			(at 138.43 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -2451,32 +2531,28 @@
 		(dnp no)
 		(uuid "a103a8ee-6d07-455f-86ab-c39886512e9c")
 		(property "Reference" "C6"
-			(at 158.75 89.408 0)
+			(at 156.845 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "1u X7R ??V"
-			(at 158.75 91.694 0)
+		(property "Value" "C"
+			(at 156.845 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 157.1752 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -2536,32 +2612,28 @@
 		(dnp no)
 		(uuid "a6dd733d-af5a-4160-8084-8bf93bf7d1c8")
 		(property "Reference" "C3"
-			(at 224.79 88.138 0)
+			(at 222.885 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "10n X7R ??V"
-			(at 224.79 90.424 0)
+		(property "Value" "C"
+			(at 222.885 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" ""
 			(at 223.2152 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2610,7 +2682,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Merops_Power:VDD_3V3")
+		(lib_id "power:+3V3")
 		(at 107.95 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -2620,7 +2692,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa1f4e4a-66d8-41af-8788-0697a76e30e1")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR17"
 			(at 107.95 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -2628,22 +2700,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "+3V3"
-			(at 105.156 61.976 0)
+			(at 107.95 62.484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2668,7 +2735,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label"
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 107.95 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2685,14 +2752,14 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR017")
+					(reference "#PWR17")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Merops_Power:VDD_3V3")
+		(lib_id "power:+3V3")
 		(at 222.25 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -2702,7 +2769,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf39cdf7-ad61-4700-b1e1-afa9137abb3a")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR21"
 			(at 222.25 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2710,22 +2777,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "+3V3"
-			(at 219.456 78.486 0)
+			(at 222.25 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2750,7 +2812,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label"
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 222.25 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2767,14 +2829,92 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR021")
+					(reference "#PWR21")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Merops_Power:VDD_3V3")
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d41d520f-db23-4542-b312-f84011c78ff8")
+		(property "Reference" "#FLG03"
+			(at 152.4 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 152.4 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 152.4 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06fd5df9-9431-4a51-b387-b865544db75c")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
 		(at 156.21 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -2784,7 +2924,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd573711-f1ee-4deb-a14f-5627925943fd")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR15"
 			(at 156.21 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2792,22 +2932,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "+3V3"
-			(at 153.416 78.486 0)
+			(at 156.21 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2832,7 +2967,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label"
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 156.21 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2849,14 +2984,14 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR015")
+					(reference "#PWR15")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Merops_Power:VDD_3V3")
+		(lib_id "power:+3V3")
 		(at 148.59 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -2866,7 +3001,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0268332-03ab-4be2-bcc0-1d79408e1ff0")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR18"
 			(at 148.59 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2874,22 +3009,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "+3V3"
-			(at 145.796 93.726 0)
+			(at 148.59 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2914,7 +3044,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label"
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 148.59 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2931,7 +3061,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR018")
+					(reference "#PWR18")
 					(unit 1)
 				)
 			)
@@ -2949,7 +3079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e74f76aa-9daf-4127-83b7-a0b8dea7d476")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR16"
 			(at 156.21 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2957,21 +3087,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "Earth"
 			(at 156.21 100.33 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -3014,7 +3139,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR016")
+					(reference "#PWR16")
 					(unit 1)
 				)
 			)
@@ -3032,7 +3157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc6fd1ce-ec32-4540-ba5a-dc77ae9ff06f")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR22"
 			(at 222.25 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3040,21 +3165,16 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
 		(property "Value" "Earth"
 			(at 222.25 100.33 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.1588)
-					(color 0 0 255 1)
 				)
 			)
 		)
@@ -3097,7 +3217,7 @@
 		(instances
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/04a2e32a-f42d-4edd-a6fe-706cfcf8167c"
-					(reference "#PWR022")
+					(reference "#PWR22")
 					(unit 1)
 				)
 			)

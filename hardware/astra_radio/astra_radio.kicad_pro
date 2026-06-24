@@ -288,6 +288,36 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 40,
+        "line_style": 0,
+        "name": "3V3_Rail",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(221, 133, 0)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 40,
+        "line_style": 0,
+        "name": "5V_Rail",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(132, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 40,
+        "line_style": 0,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(0, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 20
       }
     ],
     "meta": {
@@ -295,7 +325,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "5V_Rail",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "Earth"
+      },
+      {
+        "netclass": "3V3_Rail",
+        "pattern": "+3V3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -315,7 +358,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -388,7 +431,22 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "UART0": [
+        "UART0_TX",
+        "UART0_RX"
+      ],
+      "UART1": [
+        "UART1_TX",
+        "UART1_RX",
+        "UART1_CTS",
+        "UART1_RTS"
+      ],
+      "USB": [
+        "USB_D-",
+        "USB_D+"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -437,7 +495,7 @@
         "uuid": "8884176c-0d80-4e55-a09d-e5f02dc9ed2c"
       }
     ],
-    "used_designators": "#PWR11",
+    "used_designators": "#FLG1-3,R2-4,R7-16,TP3-6,J2-5,5.1K1,L3,AE1-2,C4,C14-21,U3,#PWR11-12,#PWR23-40",
     "variants": []
   },
   "sheets": [
@@ -460,6 +518,10 @@
     [
       "76460439-2e47-430e-9072-9daa859bcba0",
       "Power - Generation"
+    ],
+    [
+      "4473f258-9845-46ac-90c3-f4bc9c28c6c6",
+      "Sensing - RF"
     ]
   ],
   "text_variables": {},
