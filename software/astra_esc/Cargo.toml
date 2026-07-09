@@ -1,0 +1,56 @@
+[package]
+name = "ihm08m1-foc"
+version = "0.2.0"
+edition = "2021"
+description = "Sensorless FOC + staged bring-up for X-NUCLEO-IHM08M1 on NUCLEO-G474RE or NUCLEO-H533RE (Turnigy Multistar 2216-800Kv)"
+
+[dependencies]
+cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7"
+libm = "0.2"
+# Live telemetry over the ST-Link (shown automatically by `probe-rs run`)
+defmt = "0.3"
+defmt-rtt = "0.4"
+panic-probe = { version = "0.3", features = ["print-defmt"] }
+# Register-level access for the HARD REAL-TIME hot path only (TIM1 complementary
+# PWM + dead-time, ADC injected dual-conversion, OC4REF->ADC trigger, and the
+# 25 kHz control ISR). embassy-stm32's HAL can't express these, so the verified
+# register sequences in src/mcu/<dev>.rs stay on the svd2rust PAC. NOTE: no `rt`
+# feature here — embassy-stm32 owns the interrupt vector table (see below), and
+# two PACs with `rt` would emit duplicate vector tables and fail to link.
+# default-features = false is REQUIRED: stm32g4's default feature set includes
+# `rt`, which would re-emit device.x + a second vector table and collide with
+# embassy's. We only want the register definitions.
+stm32g4 = { version = "0.15.1", default-features = false, features = ["stm32g474"], optional = true }
+stm32h5 = { version = "0.16.0", default-features = false, features = ["stm32h533"], optional = true }
+
+# Embassy: owns the vector table (`rt`), the 170 MHz clock tree, and the async
+# executor/time base for all non-real-time housekeeping (button, LEDs, telemetry).
+# time-driver-tim2: TIM1 is the motor PWM, so the embassy-time driver MUST use a
+# different timer (TIM2). single-bank: G474RE flash layout. unstable-pac:
+# exposes embassy_stm32::pac so the control ISR binds via metapac's
+# `#[interrupt]` (lands in embassy's vector table).
+embassy-stm32 = { version = "0.6.0", features = ["defmt", "time-driver-tim2", "single-bank", "unstable-pac", "exti"], optional = true }
+# Versions MUST match what embassy-stm32 0.6.0 pins, or the time-queue ABI
+# (__embassy_time_queue_item_from_waker) fails to link.
+embassy-executor = { version = "0.10.0", features = ["platform-cortex-m", "executor-thread", "defmt"] }
+embassy-time = { version = "0.5.1", features = ["defmt"] }
+embassy-sync = { version = "0.8.0", features = ["defmt"] }
+
+[features]
+default = ["mcu-g4"]    # mcu-g4 + no stage feature = full sensorless FOC on the G474
+# --- Target MCU (choose exactly one; the src/mcu backend switches on these) ---
+mcu-g4 = ["dep:stm32g4", "embassy-stm32/stm32g474re"] # NUCLEO-G474RE (Cortex-M4F, 170 MHz)
+mcu-h5 = ["dep:stm32h5"] # NUCLEO-H533RE (Cortex-M33, 250 MHz) — embassy port TODO
+
+[profile.release]
+opt-level = 3
+# Thin (not fat) LTO: fat LTO fails to load the stm32g4 PAC's bitcode when the
+# embassy crates are in the graph. Thin still does cross-crate inlining, which
+# is what the 25 kHz control ISR needs.
+lto = "thin"
+codegen-units = 1
+debug = true
+
+[profile.dev]
+opt-level = 1

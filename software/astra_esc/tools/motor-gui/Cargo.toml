@@ -1,0 +1,13 @@
+[package]
+name = "motor-gui"
+version = "0.1.0"
+edition = "2021"
+description = "Live GUI for the ihm08m1-foc defmt telemetry stream"
+
+[dependencies]
+eframe = "0.28"      # window + egui, glow backend
+egui_plot = "0.28"   # the scrolling line plots
+regex = "1"          # parse one telemetry line into numbers
+
+[profile.release]
+opt-level = 2

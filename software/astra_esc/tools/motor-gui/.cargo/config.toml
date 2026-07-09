@@ -1,0 +1,8 @@
+# This is a normal host binary. The firmware project one level up pins
+#   target = "thumbv7em-none-eabihf"
+# in its .cargo/config.toml, and cargo config discovery walks UP from the
+# current working directory. Without this override, `cargo build` run from
+# here would inherit that and try to cross-compile the GUI for the MCU.
+# Pin the host target back so `cd tools/motor-gui && cargo run` just works.
+[build]
+target = "x86_64-unknown-linux-gnu"
