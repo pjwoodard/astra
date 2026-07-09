@@ -8081,7 +8081,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FW400WFMR1"
+		(property "Footprint" "astra_parts:FW400WFMR1"
 			(at 248.92 127.94 0)
 			(hide yes)
 			(show_name no)

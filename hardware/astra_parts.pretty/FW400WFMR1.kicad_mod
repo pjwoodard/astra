@@ -1,0 +1,224 @@
+(footprint "FW400WFMR1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "FW400WFMR1-2")
+	(tags "Crystal or Oscillator")
+	(property "Value" "FW400WFMR1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ce96c568-bc3f-4277-9b5e-0088342e58dd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0e8e6f78-4b4d-48d3-80e9-4384eaaa1d5a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b2d8802-c57a-4e0b-8713-d3243e4ffeec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Reference" "Y**"
+		(at 1.6764 -0.8128 0)
+		(layer "F.SilkS")
+		(uuid "c613a1fc-cdc5-420d-bf4f-d8a296121218")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 1.3956 3.3938)
+		(end 1.3956 3.3938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c87190f-eb5b-426f-8806-9b519faf0d4a")
+	)
+	(fp_line
+		(start 1.3956 3.4938)
+		(end 1.3956 3.4938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d5137b4f-b5d5-46c7-864c-11f4c18a154f")
+	)
+	(fp_arc
+		(start 1.3956 3.3938)
+		(mid 1.4456 3.4438)
+		(end 1.3956 3.4938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc4746a7-c04f-44a3-8295-fc59bcb713da")
+	)
+	(fp_arc
+		(start 1.3956 3.4938)
+		(mid 1.3456 3.4438)
+		(end 1.3956 3.3938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "46620781-6926-46ee-a524-db60bea4eded")
+	)
+	(fp_line
+		(start 0.0456 0.0438)
+		(end 4.3456 0.0438)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4c784cbc-c1fe-410d-a233-08fa962ab94a")
+	)
+	(fp_line
+		(start 0.0456 3.9438)
+		(end 0.0456 0.0438)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "666cc87d-3e60-42cb-9bd5-60f9fa5390fa")
+	)
+	(fp_line
+		(start 4.3456 0.0438)
+		(end 4.3456 3.9438)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ad99f268-1bc2-402d-a879-cc364431d25f")
+	)
+	(fp_line
+		(start 4.3456 3.9438)
+		(end 0.0456 3.9438)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7d9dd70c-cf28-474e-9755-e33d3cd5ac43")
+	)
+	(fp_line
+		(start 1.1956 1.1938)
+		(end 3.1956 1.1938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "19abda08-ef03-4c12-925b-8dd5b7c07695")
+	)
+	(fp_line
+		(start 1.1956 2.7938)
+		(end 1.1956 1.1938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2085d75f-45a9-4409-975f-7458725bef03")
+	)
+	(fp_line
+		(start 3.1956 1.1938)
+		(end 3.1956 2.7938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f7cf2082-5825-4660-8e2a-2ba22fd88d27")
+	)
+	(fp_line
+		(start 3.1956 2.7938)
+		(end 1.1956 2.7938)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "de831d74-df14-4a5d-9b09-7117f8767cf9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 6.8072 5.2578 0)
+		(layer "F.Fab")
+		(uuid "bcad3a78-d636-4829-8cd5-5f2197854302")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.4956 2.5438 90)
+		(size 0.8 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "aede82b4-abf2-42f4-934c-538a91e88036")
+	)
+	(pad "2" smd rect
+		(at 2.8956 2.5438 90)
+		(size 0.8 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4682acf5-c868-4e62-92af-bc941ef58408")
+	)
+	(pad "3" smd rect
+		(at 2.8956 1.4438 90)
+		(size 0.8 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b156e450-2b1e-4084-b5eb-d7dfad574b25")
+	)
+	(pad "4" smd rect
+		(at 1.4956 1.4438 90)
+		(size 0.8 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f05399cf-57de-461e-9567-61e21646c148")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/astra_radio_parts/FW400WFMR1/3D/FW400WFMR1.stp"
+		(offset
+			(xyz 2.2 -2 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

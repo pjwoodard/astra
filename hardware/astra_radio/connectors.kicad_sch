@@ -302,6 +302,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:SS23"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SS23"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88748/ss22.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "30V 2A Schottky Diode, SMA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SS23_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SS23_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "astra_parts:JST_SM04B-GHS-TB"
 			(pin_names
 				(offset 1.016)
@@ -2009,22 +2175,28 @@
 		(uuid "fa10c5c1-c182-414b-893b-c31fd8ca5627")
 	)
 	(junction
-		(at 214.63 43.18)
+		(at 54.61 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0705f826-bf78-4791-bf74-e23a46aadc48")
+	)
+	(junction
+		(at 54.61 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "171a47c1-f0e6-42db-b07a-82d43163e3b3")
+	)
+	(junction
+		(at 218.44 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c25a9d4-3c00-4eef-b3be-245cf4d7cf2e")
 	)
 	(junction
-		(at 54.61 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9630c886-d973-4ba5-98b1-6ecfd6ed4e37")
-	)
-	(junction
 		(at 128.27 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a4ce71ab-1085-42cf-b7b9-56e37ac6d80d")
+		(uuid "3d1e57d4-d736-420c-b639-af5398d6fc14")
 	)
 	(junction
 		(at 210.82 36.83)
@@ -2037,12 +2209,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee3a0881-50a4-4ce8-945b-9e8f61d430b9")
-	)
-	(junction
-		(at 50.8 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f623c0c4-aa44-44e0-afd2-e2906a75707c")
 	)
 	(no_connect
 		(at 195.58 55.88)
@@ -2176,16 +2342,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 22.86) (xy 54.61 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b5c7ea1-21fd-448d-a510-5963f9c44042")
-	)
-	(wire
-		(pts
 			(xy 205.74 35.56) (xy 210.82 35.56)
 		)
 		(stroke
@@ -2206,13 +2362,13 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 22.86) (xy 128.27 33.02)
+			(xy 54.61 33.02) (xy 54.61 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3522f71f-7a4e-4ba4-bf32-7a01972a7726")
+		(uuid "35375fbf-283d-49e9-bf03-e086b62b0100")
 	)
 	(wire
 		(pts
@@ -2236,6 +2392,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 21.59) (xy 54.61 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a6f0cf6-a73c-4e2f-a670-6f622a08d865")
+	)
+	(wire
+		(pts
 			(xy 218.44 20.32) (xy 218.44 17.78)
 		)
 		(stroke
@@ -2256,6 +2422,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 43.18) (xy 218.44 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70546d67-6128-4540-a1b6-f16673593cf6")
+	)
+	(wire
+		(pts
 			(xy 128.27 20.32) (xy 128.27 22.86)
 		)
 		(stroke
@@ -2273,6 +2449,16 @@
 			(type default)
 		)
 		(uuid "729a70ae-c6de-4be4-80bc-dd4bb943a6c9")
+	)
+	(wire
+		(pts
+			(xy 54.61 21.59) (xy 66.04 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74468413-47c8-4ba0-8d67-783d5251f903")
 	)
 	(wire
 		(pts
@@ -2325,16 +2511,6 @@
 		)
 		(uuid "88cd5ef5-9b44-4a3b-83d5-45c112a19ccf")
 	)
-	(wire
-		(pts
-			(xy 54.61 25.4) (xy 62.23 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d58fba0-5ec4-4d0b-ac74-746d59ad594f")
-	)
 	(bus
 		(pts
 			(xy 142.24 31.75) (xy 142.24 35.56)
@@ -2367,6 +2543,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 19.05) (xy 54.61 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d1fb3f-04b1-474d-9acd-8e9a75a3a4c9")
+	)
+	(wire
+		(pts
 			(xy 120.65 40.64) (xy 139.7 40.64)
 		)
 		(stroke
@@ -2377,17 +2563,17 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 43.18) (xy 214.63 43.18)
+			(xy 128.27 22.86) (xy 128.27 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b0bc79a6-53b6-447a-b0a5-d81b9965f903")
+		(uuid "b2be6a07-b930-47aa-a130-7aa013298963")
 	)
 	(wire
 		(pts
-			(xy 50.8 35.56) (xy 54.61 35.56)
+			(xy 46.99 35.56) (xy 54.61 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2407,7 +2593,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 22.86) (xy 135.89 22.86)
+			(xy 128.27 22.86) (xy 138.43 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2447,13 +2633,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 25.4) (xy 54.61 35.56)
+			(xy 54.61 25.4) (xy 54.61 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d47f7a95-024f-495d-a5d0-2572e3c527aa")
+		(uuid "cf2a1485-1667-489b-b2a4-60395e8268e9")
 	)
 	(wire
 		(pts
@@ -2464,16 +2650,6 @@
 			(type default)
 		)
 		(uuid "d8549c08-0046-44ca-bf41-d716e0a38c05")
-	)
-	(wire
-		(pts
-			(xy 46.99 35.56) (xy 50.8 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df610cfc-6d3d-46d2-933f-9cfc325304a1")
 	)
 	(wire
 		(pts
@@ -4016,7 +4192,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 214.63 43.18 0)
+		(at 218.44 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4026,7 +4202,7 @@
 		(dnp no)
 		(uuid "1601d6dc-1424-4fe4-8ab4-01cf97cfa5f0")
 		(property "Reference" "#PWR37"
-			(at 214.63 46.99 0)
+			(at 218.44 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4037,7 +4213,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 214.63 39.624 0)
+			(at 218.44 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4047,7 +4223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 43.18 0)
+			(at 218.44 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4058,7 +4234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 43.18 0)
+			(at 218.44 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4069,7 +4245,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 214.63 43.18 0)
+			(at 218.44 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4086,6 +4262,88 @@
 			(project "astra_radio"
 				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/87710915-18f1-466a-bb9d-99b56279d8fb"
 					(reference "#PWR37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS23")
+		(at 54.61 29.21 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17f7e764-d952-4f6e-8484-f689b954b209")
+		(property "Reference" "D1"
+			(at 57.15 27.6224 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS23"
+			(at 57.15 30.1624 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 50.165 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88748/ss22.pdf"
+			(at 54.61 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30V 2A Schottky Diode, SMA"
+			(at 54.61 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "907121b1-7955-4fc5-92d8-cb276c471ce4")
+		)
+		(pin "2"
+			(uuid "e326de02-6afa-4402-ac0e-47777a18c22f")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/87710915-18f1-466a-bb9d-99b56279d8fb"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4172,7 +4430,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 62.23 27.94 0)
+		(at 66.04 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4183,7 +4441,7 @@
 		(fields_autoplaced yes)
 		(uuid "2097c0f9-bc00-4783-80c4-bce19b46bbf4")
 		(property "Reference" "C20"
-			(at 64.77 26.6762 0)
+			(at 68.58 22.8662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4194,7 +4452,7 @@
 			)
 		)
 		(property "Value" "100n X7R V??"
-			(at 64.77 29.2162 0)
+			(at 68.58 25.4062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4205,7 +4463,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 27.94 0)
+			(at 66.04 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4216,7 +4474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 27.94 0)
+			(at 66.04 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4227,7 +4485,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 62.23 27.94 0)
+			(at 66.04 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4253,8 +4511,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 54.61 22.86 0)
+		(lib_id "power:PWR_FLAG")
+		(at 54.61 19.05 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4262,9 +4520,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "45ec7fd5-bdcb-4d83-ad12-6eb471c3cc4e")
-		(property "Reference" "#PWR7"
-			(at 54.61 26.67 0)
+		(fields_autoplaced yes)
+		(uuid "3057065a-2c03-43a0-9268-9623f41ab974")
+		(property "Reference" "#FLG01"
+			(at 52.705 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4274,18 +4533,19 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 54.61 19.304 0)
+		(property "Value" "PWR_FLAG"
+			(at 50.8 19.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 22.86 0)
+			(at 54.61 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4296,7 +4556,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 22.86 0)
+			(at 54.61 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 54.61 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9570c48f-fac7-4504-918c-a7137da05c3d")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/87710915-18f1-466a-bb9d-99b56279d8fb"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 54.61 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45ec7fd5-bdcb-4d83-ad12-6eb471c3cc4e")
+		(property "Reference" "#PWR7"
+			(at 54.61 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 54.61 14.224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 17.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4307,7 +4644,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 54.61 22.86 0)
+			(at 54.61 17.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4567,84 +4904,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 50.8 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f9e98ef-35b9-4335-8659-cb955ebeb8cf")
-		(property "Reference" "#FLG01"
-			(at 50.8 33.655 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 50.8 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 50.8 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e59c3652-3dc2-404b-ab9a-9bf568bf8040")
-		)
-		(instances
-			(project "astra_radio"
-				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/87710915-18f1-466a-bb9d-99b56279d8fb"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "astra_parts:JST_SM04B-GHS-TB")
 		(at 41.91 34.29 0)
 		(mirror y)
@@ -4732,7 +4991,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 214.63 48.26 0)
+		(at 218.44 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4743,7 +5002,7 @@
 		(fields_autoplaced yes)
 		(uuid "66176fd0-f358-40a7-8b38-f1769b7cf414")
 		(property "Reference" "#PWR39"
-			(at 214.63 54.61 0)
+			(at 218.44 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4754,7 +5013,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 214.63 53.34 0)
+			(at 218.44 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,7 +5024,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 48.26 0)
+			(at 218.44 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4776,7 +5035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 48.26 0)
+			(at 218.44 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4787,7 +5046,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 214.63 48.26 0)
+			(at 218.44 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4934,8 +5193,170 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SS23")
+		(at 128.27 29.21 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fc7a8e7-58fd-4f93-b2e2-cb0a216653be")
+		(property "Reference" "D2"
+			(at 130.81 27.6224 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS23"
+			(at 130.81 30.1624 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 123.825 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88748/ss22.pdf"
+			(at 128.27 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30V 2A Schottky Diode, SMA"
+			(at 128.27 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5b48ef8-62ab-48f6-bda1-e94d4dc3f16f")
+		)
+		(pin "2"
+			(uuid "d5d1458b-dfa3-47e5-bb4b-39865415ba45")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/87710915-18f1-466a-bb9d-99b56279d8fb"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS23")
+		(at 209.55 43.18 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f3649ca-6385-4d6a-b711-1f32b55b3a30")
+		(property "Reference" "D3"
+			(at 209.8675 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS23"
+			(at 209.8675 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 209.55 38.735 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88748/ss22.pdf"
+			(at 209.55 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30V 2A Schottky Diode, SMA"
+			(at 209.55 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44b87231-e27f-4434-b660-c9ef030e14e1")
+		)
+		(pin "2"
+			(uuid "3a155344-e658-43e6-8682-77f66c8e64b3")
+		)
+		(instances
+			(project "astra_radio"
+				(path "/8884176c-0d80-4e55-a09d-e5f02dc9ed2c/87710915-18f1-466a-bb9d-99b56279d8fb"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
-		(at 135.89 27.94 0)
+		(at 138.43 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4946,7 +5367,7 @@
 		(fields_autoplaced yes)
 		(uuid "83c433f7-5add-4bf7-838e-6fb4027c9c46")
 		(property "Reference" "#PWR33"
-			(at 135.89 34.29 0)
+			(at 138.43 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4957,7 +5378,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 135.89 33.02 0)
+			(at 138.43 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4968,7 +5389,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 27.94 0)
+			(at 138.43 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4979,7 +5400,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 27.94 0)
+			(at 138.43 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4990,7 +5411,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 135.89 27.94 0)
+			(at 138.43 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5185,7 +5606,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 214.63 45.72 0)
+		(at 218.44 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5193,10 +5614,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "93b04e82-8178-434e-ae9a-1c6d645de496")
 		(property "Reference" "C19"
-			(at 217.17 44.4562 0)
+			(at 220.98 44.4562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5207,7 +5627,7 @@
 			)
 		)
 		(property "Value" "100n X7R ??V"
-			(at 217.17 46.9962 0)
+			(at 220.472 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5218,7 +5638,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 45.72 0)
+			(at 218.44 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5229,7 +5649,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 45.72 0)
+			(at 218.44 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5240,7 +5660,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 214.63 45.72 0)
+			(at 218.44 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5423,7 +5843,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 135.89 25.4 0)
+		(at 138.43 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5434,7 +5854,7 @@
 		(fields_autoplaced yes)
 		(uuid "cadc1264-33a2-43b7-ab9b-58545923f72c")
 		(property "Reference" "C21"
-			(at 138.43 24.1362 0)
+			(at 140.97 24.1362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5445,7 +5865,7 @@
 			)
 		)
 		(property "Value" "100n X7R V??"
-			(at 138.43 26.6762 0)
+			(at 140.97 26.6762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5456,7 +5876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 25.4 0)
+			(at 138.43 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5467,7 +5887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 25.4 0)
+			(at 138.43 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5478,7 +5898,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 135.89 25.4 0)
+			(at 138.43 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5505,7 +5925,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 62.23 30.48 0)
+		(at 66.04 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5516,7 +5936,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf04f617-f182-4619-91fb-e1c764d79d94")
 		(property "Reference" "#PWR8"
-			(at 62.23 36.83 0)
+			(at 66.04 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5527,7 +5947,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 62.23 35.56 0)
+			(at 66.04 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5538,7 +5958,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 30.48 0)
+			(at 66.04 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5549,7 +5969,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 30.48 0)
+			(at 66.04 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5560,7 +5980,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 62.23 30.48 0)
+			(at 66.04 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
