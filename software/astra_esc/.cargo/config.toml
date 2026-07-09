@@ -1,0 +1,30 @@
+# Default target = the G474 board (mcu-g4 is the default feature).
+#
+# Build / run the G4 build:
+#   cargo run --release
+#
+# Build / run the H5 build (needs the Cortex-M33 target + the mcu-h5 backend):
+#   rustup target add thumbv8m.main-none-eabihf   # once
+#   cargo run --release --no-default-features --features mcu-h5 \
+#       --target thumbv8m.main-none-eabihf
+# (add a stage with e.g. --features mcu-h5,stage0-pwm)
+[build]
+target = "thumbv7em-none-eabihf"
+
+# `probe-rs run` flashes, resets, and streams defmt logs to your terminal.
+# cargo install probe-rs-tools
+#
+# The H5 triple contains a dot (thumbv8m.main-none-eabihf). Cargo rebuilds the
+# triple by joining the nested config path, so the key MUST be written UNQUOTED
+# (`[target.thumbv8m.main-none-eabihf]`). A quoted key ([target.'..'] / ["..""])
+# is treated as one literal segment and silently never matches — which drops the
+# runner (and rustflags). The linker scripts (-Tlink.x/-Tdefmt.x) live in
+# build.rs so they apply to every target without duplicating them per section.
+[target.thumbv7em-none-eabihf]
+runner = "probe-rs run --chip STM32G474RETx"
+
+[target.thumbv8m.main-none-eabihf]
+runner = "probe-rs run --chip STM32H533RETx"
+
+[env]
+DEFMT_LOG = "info"
