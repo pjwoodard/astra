@@ -1,0 +1,89 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "a26f403e-8944-4947-8dfd-e806eee74753")
+	(paper "A4")
+	(lib_symbols)
+	(rectangle
+		(start 138.176 14.986)
+		(end 281.686 51.816)
+		(stroke
+			(width 0.508)
+			(type dash)
+			(color 132 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "129a4156-4551-4766-9e51-48ba60a5dbce")
+	)
+	(text "System Power"
+		(exclude_from_sim no)
+		(at 149.352 49.276 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "8359eab0-ff35-432c-b126-17b1ed49f18c")
+	)
+	(text ""
+		(exclude_from_sim no)
+		(at 148.59 48.26 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "908e3b59-6e22-45f0-8923-15ec843fa924")
+	)
+	(sheet
+		(at 13.97 170.18)
+		(size 41.91 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 255 0 1)
+		)
+		(uuid "a5e5619d-6610-4f46-8f22-93555ab82429")
+		(property "Sheetname" "Comms"
+			(at 13.97 169.4684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "comms_connector.kicad_sch"
+			(at 13.97 193.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "airdata_rev_g"
+				(path "/a55980fd-2838-4365-96fb-dc70ffddf152/9169b589-95ca-421d-b930-42a1b6ca98b1"
+					(page "3")
+				)
+			)
+		)
+	)
+)
